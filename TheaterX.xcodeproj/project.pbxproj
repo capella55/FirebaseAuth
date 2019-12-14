@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E598DF82519795F66EF451E /* Pods_TheaterX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F865D1266F13D3AE813FE9 /* Pods_TheaterX.framework */; };
+		214CED55230B5E010038315D /* ScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214CED54230B5E010038315D /* ScrollController.swift */; };
+		2153797B22D512E50039E684 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153797622D512E50039E684 /* SignUpController.swift */; };
+		2153797C22D512E50039E684 /* VerifyEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153797722D512E50039E684 /* VerifyEmailController.swift */; };
+		2153797D22D512E50039E684 /* ChangeEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153797822D512E50039E684 /* ChangeEmailController.swift */; };
+		2153797E22D512E50039E684 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153797922D512E50039E684 /* HomeController.swift */; };
+		2153797F22D512E50039E684 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153797A22D512E50039E684 /* LoginController.swift */; };
+		2153798122D513300039E684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153798022D513300039E684 /* AppDelegate.swift */; };
+		2153798422D513650039E684 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2153798222D513650039E684 /* Login.storyboard */; };
+		2153798522D513650039E684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2153798322D513650039E684 /* LaunchScreen.storyboard */; };
+		2153798822D522DD0039E684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2153798722D522DD0039E684 /* Main.storyboard */; };
+		2160CE8D22FC6F800089231C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160CE8C22FC6F800089231C /* ContactController.swift */; };
+		2160CE8F22FC9E750089231C /* ShowroomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160CE8E22FC9E750089231C /* ShowroomController.swift */; };
+		2164C63022FCC9D900765E33 /* CareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164C62F22FCC9D900765E33 /* CareController.swift */; };
+		2164C63222FCCCF200765E33 /* ResetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164C63122FCCCF200765E33 /* ResetController.swift */; };
+		2164C63422FCCE8E00765E33 /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164C63322FCCE8E00765E33 /* ServiceController.swift */; };
+		2164C63622FCD31700765E33 /* UpgradeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164C63522FCD31700765E33 /* UpgradeController.swift */; };
+		2172DE622381A0560098957B /* Valid-Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172DE612381A0560098957B /* Valid-Forms.swift */; };
+		217DF9C222D50F3600A0F21B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DF9C122D50F3600A0F21B /* Assets.xcassets */; };
+		217DF9CD22D50FA000A0F21B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217DF9CC22D50FA000A0F21B /* GoogleService-Info.plist */; };
+		21A2D86623A48E5B00DFD9D6 /* NewEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A2D86523A48E5B00DFD9D6 /* NewEmailController.swift */; };
+		21A2D86823A48E6B00DFD9D6 /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A2D86723A48E6B00DFD9D6 /* NewUserController.swift */; };
+		21A2D86A23A48E7600DFD9D6 /* NewPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A2D86923A48E7600DFD9D6 /* NewPasswordController.swift */; };
+		21FC563422DCE0CC001BA7AC /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562222DCE0CC001BA7AC /* Poppins-Medium.otf */; };
+		21FC563522DCE0CC001BA7AC /* Poppins-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562322DCE0CC001BA7AC /* Poppins-ExtraLight.otf */; };
+		21FC563622DCE0CC001BA7AC /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562422DCE0CC001BA7AC /* Poppins-Light.otf */; };
+		21FC563722DCE0CC001BA7AC /* Poppins-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562522DCE0CC001BA7AC /* Poppins-ThinItalic.otf */; };
+		21FC563822DCE0CC001BA7AC /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562622DCE0CC001BA7AC /* Poppins-SemiBold.otf */; };
+		21FC563922DCE0CC001BA7AC /* Poppins-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562722DCE0CC001BA7AC /* Poppins-LightItalic.otf */; };
+		21FC563A22DCE0CC001BA7AC /* Poppins-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562822DCE0CC001BA7AC /* Poppins-BlackItalic.otf */; };
+		21FC563B22DCE0CC001BA7AC /* Poppins-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562922DCE0CC001BA7AC /* Poppins-BoldItalic.otf */; };
+		21FC563C22DCE0CC001BA7AC /* Poppins-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562A22DCE0CC001BA7AC /* Poppins-ExtraBoldItalic.otf */; };
+		21FC563D22DCE0CC001BA7AC /* Poppins-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562B22DCE0CC001BA7AC /* Poppins-Black.otf */; };
+		21FC563E22DCE0CC001BA7AC /* Poppins-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562C22DCE0CC001BA7AC /* Poppins-Italic.otf */; };
+		21FC563F22DCE0CC001BA7AC /* Poppins-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562D22DCE0CC001BA7AC /* Poppins-MediumItalic.otf */; };
+		21FC564022DCE0CC001BA7AC /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562E22DCE0CC001BA7AC /* Poppins-Regular.otf */; };
+		21FC564122DCE0CC001BA7AC /* Poppins-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC562F22DCE0CC001BA7AC /* Poppins-ExtraLightItalic.otf */; };
+		21FC564222DCE0CC001BA7AC /* Poppins-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC563022DCE0CC001BA7AC /* Poppins-Thin.otf */; };
+		21FC564322DCE0CC001BA7AC /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC563122DCE0CC001BA7AC /* Poppins-Bold.otf */; };
+		21FC564422DCE0CC001BA7AC /* Poppins-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC563222DCE0CC001BA7AC /* Poppins-ExtraBold.otf */; };
+		21FC564522DCE0CC001BA7AC /* Poppins-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21FC563322DCE0CC001BA7AC /* Poppins-SemiBoldItalic.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		214CED54230B5E010038315D /* ScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollController.swift; sourceTree = "<group>"; };
+		2153797622D512E50039E684 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		2153797722D512E50039E684 /* VerifyEmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailController.swift; sourceTree = "<group>"; };
+		2153797822D512E50039E684 /* ChangeEmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailController.swift; sourceTree = "<group>"; };
+		2153797922D512E50039E684 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		2153797A22D512E50039E684 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		2153798022D513300039E684 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2153798222D513650039E684 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2153798322D513650039E684 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2153798622D514110039E684 /* TheaterX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheaterX-Bridging-Header.h"; sourceTree = "<group>"; };
+		2153798722D522DD0039E684 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2160CE8C22FC6F800089231C /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		2160CE8E22FC9E750089231C /* ShowroomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomController.swift; sourceTree = "<group>"; };
+		2164C62F22FCC9D900765E33 /* CareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareController.swift; sourceTree = "<group>"; };
+		2164C63122FCCCF200765E33 /* ResetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetController.swift; sourceTree = "<group>"; };
+		2164C63322FCCE8E00765E33 /* ServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
+		2164C63522FCD31700765E33 /* UpgradeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeController.swift; sourceTree = "<group>"; };
+		2172DE612381A0560098957B /* Valid-Forms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Valid-Forms.swift"; sourceTree = "<group>"; };
+		217DF9B722D50F3600A0F21B /* TheaterX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheaterX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		217DF9C122D50F3600A0F21B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		217DF9C622D50F3600A0F21B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217DF9CC22D50FA000A0F21B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21A2D86523A48E5B00DFD9D6 /* NewEmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmailController.swift; sourceTree = "<group>"; };
+		21A2D86723A48E6B00DFD9D6 /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
+		21A2D86923A48E7600DFD9D6 /* NewPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordController.swift; sourceTree = "<group>"; };
+		21FC562222DCE0CC001BA7AC /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
+		21FC562322DCE0CC001BA7AC /* Poppins-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.otf"; sourceTree = "<group>"; };
+		21FC562422DCE0CC001BA7AC /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
+		21FC562522DCE0CC001BA7AC /* Poppins-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.otf"; sourceTree = "<group>"; };
+		21FC562622DCE0CC001BA7AC /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
+		21FC562722DCE0CC001BA7AC /* Poppins-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.otf"; sourceTree = "<group>"; };
+		21FC562822DCE0CC001BA7AC /* Poppins-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.otf"; sourceTree = "<group>"; };
+		21FC562922DCE0CC001BA7AC /* Poppins-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.otf"; sourceTree = "<group>"; };
+		21FC562A22DCE0CC001BA7AC /* Poppins-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		21FC562B22DCE0CC001BA7AC /* Poppins-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.otf"; sourceTree = "<group>"; };
+		21FC562C22DCE0CC001BA7AC /* Poppins-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.otf"; sourceTree = "<group>"; };
+		21FC562D22DCE0CC001BA7AC /* Poppins-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.otf"; sourceTree = "<group>"; };
+		21FC562E22DCE0CC001BA7AC /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		21FC562F22DCE0CC001BA7AC /* Poppins-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		21FC563022DCE0CC001BA7AC /* Poppins-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.otf"; sourceTree = "<group>"; };
+		21FC563122DCE0CC001BA7AC /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
+		21FC563222DCE0CC001BA7AC /* Poppins-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.otf"; sourceTree = "<group>"; };
+		21FC563322DCE0CC001BA7AC /* Poppins-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		77F865D1266F13D3AE813FE9 /* Pods_TheaterX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheaterX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C844E1EBA4939C637B935B1A /* Pods-TheaterX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheaterX.release.xcconfig"; path = "Target Support Files/Pods-TheaterX/Pods-TheaterX.release.xcconfig"; sourceTree = "<group>"; };
+		EC4520D3C10B85796856C503 /* Pods-TheaterX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheaterX.debug.xcconfig"; path = "Target Support Files/Pods-TheaterX/Pods-TheaterX.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		217DF9B422D50F3600A0F21B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E598DF82519795F66EF451E /* Pods_TheaterX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		054929C49015ABCB757B3325 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC4520D3C10B85796856C503 /* Pods-TheaterX.debug.xcconfig */,
+				C844E1EBA4939C637B935B1A /* Pods-TheaterX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2160CE8A22FC6EED0089231C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2153797A22D512E50039E684 /* LoginController.swift */,
+				2153797622D512E50039E684 /* SignUpController.swift */,
+				21A2D86523A48E5B00DFD9D6 /* NewEmailController.swift */,
+				21A2D86723A48E6B00DFD9D6 /* NewUserController.swift */,
+				21A2D86923A48E7600DFD9D6 /* NewPasswordController.swift */,
+				2153797722D512E50039E684 /* VerifyEmailController.swift */,
+				2153797822D512E50039E684 /* ChangeEmailController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2160CE8B22FC6EFD0089231C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2153797922D512E50039E684 /* HomeController.swift */,
+				2160CE8C22FC6F800089231C /* ContactController.swift */,
+				2164C63122FCCCF200765E33 /* ResetController.swift */,
+				2164C62F22FCC9D900765E33 /* CareController.swift */,
+				2164C63322FCCE8E00765E33 /* ServiceController.swift */,
+				2164C63522FCD31700765E33 /* UpgradeController.swift */,
+				2160CE8E22FC9E750089231C /* ShowroomController.swift */,
+				214CED54230B5E010038315D /* ScrollController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2173D1352378B72E00278954 /* TheaterX */ = {
+			isa = PBXGroup;
+			children = (
+				217DF9C122D50F3600A0F21B /* Assets.xcassets */,
+				217DF9C622D50F3600A0F21B /* Info.plist */,
+				217DF9CC22D50FA000A0F21B /* GoogleService-Info.plist */,
+				2153798022D513300039E684 /* AppDelegate.swift */,
+				2153798622D514110039E684 /* TheaterX-Bridging-Header.h */,
+			);
+			path = TheaterX;
+			sourceTree = "<group>";
+		};
+		217DF9AE22D50F3600A0F21B = {
+			isa = PBXGroup;
+			children = (
+				2173D1352378B72E00278954 /* TheaterX */,
+				21FCD28822DE340100E24DCF /* Model */,
+				21FCD28922DE342100E24DCF /* Views */,
+				21FCD28A22DE343100E24DCF /* Controllers */,
+				217DF9B822D50F3600A0F21B /* Products */,
+				054929C49015ABCB757B3325 /* Pods */,
+				2E9A98884F93F577993EBAF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		217DF9B822D50F3600A0F21B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				217DF9B722D50F3600A0F21B /* TheaterX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21FC560D22DCDAB1001BA7AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				21FC562B22DCE0CC001BA7AC /* Poppins-Black.otf */,
+				21FC562822DCE0CC001BA7AC /* Poppins-BlackItalic.otf */,
+				21FC563122DCE0CC001BA7AC /* Poppins-Bold.otf */,
+				21FC562922DCE0CC001BA7AC /* Poppins-BoldItalic.otf */,
+				21FC563222DCE0CC001BA7AC /* Poppins-ExtraBold.otf */,
+				21FC562A22DCE0CC001BA7AC /* Poppins-ExtraBoldItalic.otf */,
+				21FC562322DCE0CC001BA7AC /* Poppins-ExtraLight.otf */,
+				21FC562F22DCE0CC001BA7AC /* Poppins-ExtraLightItalic.otf */,
+				21FC562C22DCE0CC001BA7AC /* Poppins-Italic.otf */,
+				21FC562422DCE0CC001BA7AC /* Poppins-Light.otf */,
+				21FC562722DCE0CC001BA7AC /* Poppins-LightItalic.otf */,
+				21FC562222DCE0CC001BA7AC /* Poppins-Medium.otf */,
+				21FC562D22DCE0CC001BA7AC /* Poppins-MediumItalic.otf */,
+				21FC562E22DCE0CC001BA7AC /* Poppins-Regular.otf */,
+				21FC562622DCE0CC001BA7AC /* Poppins-SemiBold.otf */,
+				21FC563322DCE0CC001BA7AC /* Poppins-SemiBoldItalic.otf */,
+				21FC563022DCE0CC001BA7AC /* Poppins-Thin.otf */,
+				21FC562522DCE0CC001BA7AC /* Poppins-ThinItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		21FCD28822DE340100E24DCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2172DE612381A0560098957B /* Valid-Forms.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21FCD28922DE342100E24DCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2153798722D522DD0039E684 /* Main.storyboard */,
+				2153798222D513650039E684 /* Login.storyboard */,
+				2153798322D513650039E684 /* LaunchScreen.storyboard */,
+				21FC560D22DCDAB1001BA7AC /* Fonts */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		21FCD28A22DE343100E24DCF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2160CE8A22FC6EED0089231C /* Login */,
+				2160CE8B22FC6EFD0089231C /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E9A98884F93F577993EBAF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77F865D1266F13D3AE813FE9 /* Pods_TheaterX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		217DF9B622D50F3600A0F21B /* TheaterX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217DF9C922D50F3600A0F21B /* Build configuration list for PBXNativeTarget "TheaterX" */;
+			buildPhases = (
+				F95617EBFF2D3C9AF63F0A8D /* [CP] Check Pods Manifest.lock */,
+				217DF9B322D50F3600A0F21B /* Sources */,
+				217DF9B422D50F3600A0F21B /* Frameworks */,
+				217DF9B522D50F3600A0F21B /* Resources */,
+				F447A47C02E13EE0CCBC8994 /* [CP] Embed Pods Frameworks */,
+				3B4AF4B5663CD7C06188E3CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheaterX;
+			productName = TheaterX;
+			productReference = 217DF9B722D50F3600A0F21B /* TheaterX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		217DF9AF22D50F3600A0F21B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Brendon Van";
+				TargetAttributes = {
+					217DF9B622D50F3600A0F21B = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 217DF9B222D50F3600A0F21B /* Build configuration list for PBXProject "TheaterX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 217DF9AE22D50F3600A0F21B;
+			productRefGroup = 217DF9B822D50F3600A0F21B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				217DF9B622D50F3600A0F21B /* TheaterX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		217DF9B522D50F3600A0F21B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FC563822DCE0CC001BA7AC /* Poppins-SemiBold.otf in Resources */,
+				21FC563B22DCE0CC001BA7AC /* Poppins-BoldItalic.otf in Resources */,
+				2153798422D513650039E684 /* Login.storyboard in Resources */,
+				2153798822D522DD0039E684 /* Main.storyboard in Resources */,
+				21FC564222DCE0CC001BA7AC /* Poppins-Thin.otf in Resources */,
+				21FC563522DCE0CC001BA7AC /* Poppins-ExtraLight.otf in Resources */,
+				21FC563F22DCE0CC001BA7AC /* Poppins-MediumItalic.otf in Resources */,
+				21FC564022DCE0CC001BA7AC /* Poppins-Regular.otf in Resources */,
+				21FC563E22DCE0CC001BA7AC /* Poppins-Italic.otf in Resources */,
+				21FC564422DCE0CC001BA7AC /* Poppins-ExtraBold.otf in Resources */,
+				21FC564122DCE0CC001BA7AC /* Poppins-ExtraLightItalic.otf in Resources */,
+				21FC563C22DCE0CC001BA7AC /* Poppins-ExtraBoldItalic.otf in Resources */,
+				21FC563422DCE0CC001BA7AC /* Poppins-Medium.otf in Resources */,
+				21FC564322DCE0CC001BA7AC /* Poppins-Bold.otf in Resources */,
+				21FC563922DCE0CC001BA7AC /* Poppins-LightItalic.otf in Resources */,
+				2153798522D513650039E684 /* LaunchScreen.storyboard in Resources */,
+				21FC563D22DCE0CC001BA7AC /* Poppins-Black.otf in Resources */,
+				21FC564522DCE0CC001BA7AC /* Poppins-SemiBoldItalic.otf in Resources */,
+				21FC563A22DCE0CC001BA7AC /* Poppins-BlackItalic.otf in Resources */,
+				21FC563722DCE0CC001BA7AC /* Poppins-ThinItalic.otf in Resources */,
+				217DF9C222D50F3600A0F21B /* Assets.xcassets in Resources */,
+				21FC563622DCE0CC001BA7AC /* Poppins-Light.otf in Resources */,
+				217DF9CD22D50FA000A0F21B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B4AF4B5663CD7C06188E3CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheaterX/Pods-TheaterX-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheaterX/Pods-TheaterX-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheaterX/Pods-TheaterX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F447A47C02E13EE0CCBC8994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheaterX/Pods-TheaterX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheaterX/Pods-TheaterX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheaterX/Pods-TheaterX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F95617EBFF2D3C9AF63F0A8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheaterX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		217DF9B322D50F3600A0F21B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2153798122D513300039E684 /* AppDelegate.swift in Sources */,
+				2153797E22D512E50039E684 /* HomeController.swift in Sources */,
+				2153797B22D512E50039E684 /* SignUpController.swift in Sources */,
+				2153797C22D512E50039E684 /* VerifyEmailController.swift in Sources */,
+				2172DE622381A0560098957B /* Valid-Forms.swift in Sources */,
+				2164C63422FCCE8E00765E33 /* ServiceController.swift in Sources */,
+				2153797D22D512E50039E684 /* ChangeEmailController.swift in Sources */,
+				2153797F22D512E50039E684 /* LoginController.swift in Sources */,
+				214CED55230B5E010038315D /* ScrollController.swift in Sources */,
+				2164C63622FCD31700765E33 /* UpgradeController.swift in Sources */,
+				21A2D86A23A48E7600DFD9D6 /* NewPasswordController.swift in Sources */,
+				2164C63222FCCCF200765E33 /* ResetController.swift in Sources */,
+				2164C63022FCC9D900765E33 /* CareController.swift in Sources */,
+				2160CE8D22FC6F800089231C /* ContactController.swift in Sources */,
+				2160CE8F22FC9E750089231C /* ShowroomController.swift in Sources */,
+				21A2D86623A48E5B00DFD9D6 /* NewEmailController.swift in Sources */,
+				21A2D86823A48E6B00DFD9D6 /* NewUserController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		217DF9C722D50F3600A0F21B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		217DF9C822D50F3600A0F21B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		217DF9CA22D50F3600A0F21B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4520D3C10B85796856C503 /* Pods-TheaterX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R77RUSDCD;
+				INFOPLIST_FILE = TheaterX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendonvan.TheaterX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheaterX/TheaterX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		217DF9CB22D50F3600A0F21B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C844E1EBA4939C637B935B1A /* Pods-TheaterX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R77RUSDCD;
+				INFOPLIST_FILE = TheaterX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendonvan.TheaterX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheaterX/TheaterX-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		217DF9B222D50F3600A0F21B /* Build configuration list for PBXProject "TheaterX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217DF9C722D50F3600A0F21B /* Debug */,
+				217DF9C822D50F3600A0F21B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		217DF9C922D50F3600A0F21B /* Build configuration list for PBXNativeTarget "TheaterX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217DF9CA22D50F3600A0F21B /* Debug */,
+				217DF9CB22D50F3600A0F21B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 217DF9AF22D50F3600A0F21B /* Project object */;
+}
