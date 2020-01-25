@@ -163,7 +163,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
                 return self.present(alert, animated: true, completion: nil)
                 
                 
-            } else if Check().isValidEmail(emailStr: email) == false {
+            } else if Check().isValidEmail(emailStr: self.email) == false {
                 
                 //Checks if email is valid if not let user know
                 let alert = UIAlertController(title: "Invalid Email", message: "Email does not exist", preferredStyle: UIAlertController.Style.alert)
@@ -212,7 +212,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
                 
                 let uid = Auth.auth().currentUser!.uid
                 let ref = Database.database().reference(fromURL: "https://theaterx-official.firebaseio.com/")
-                let values = ["Type": "Customer", "First": firstName, "Last": lastName, "Phone": phoneNum, "Email": email]
+                let values = ["Type": "Customer", "First": firstName, "Last": lastName, "Phone": phoneNum, "Email": self.email]
                 let usersReference = ref.child("users").child(uid)
                 usersReference.updateChildValues(values, withCompletionBlock: {(error, ref) in
                     if error != nil {
@@ -224,7 +224,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
                     print("Saved user successfully into Firebase database")
                     
                     self.uid = uid
-                    self.email = email
+                    //self.email = email
                     
                     self.performSegue(withIdentifier: "verifyEmailSegue", sender: nil)
                     
