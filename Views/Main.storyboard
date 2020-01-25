@@ -37,11 +37,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MRt-dQ-n2l">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="1022"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="860"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="8AY-xd-VZf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1022"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="860"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-6r-uQD" userLabel="TheaterX_Logo">
                                     <rect key="frame" x="0.0" y="49.999999999999986" width="375" height="166.66666666666663"/>
@@ -616,11 +616,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9iN-Dt-dff">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="bU3-Hu-ns3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoD-zU-P9S" userLabel="Header">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
@@ -995,11 +995,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QSm-If-qCi">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="749"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="sFY-FW-fcs">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="749"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmC-ku-Cb2" userLabel="Header">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
@@ -1241,11 +1241,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eSE-Dk-jJ6">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-e8-gYb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzr-0h-g8F" userLabel="Header">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
@@ -1445,11 +1445,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgT-7N-Gms">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="H4e-PP-KXD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-y1-mzu" userLabel="Header">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
@@ -1565,11 +1565,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1EZ-eP-F5k">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="wmt-S4-lad">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="695"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OK1-Zp-o0q" userLabel="Header">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
@@ -1747,11 +1747,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CrW-69-jaM">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="894"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="840"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="dky-YY-Fmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="894"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="840"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wn0-66-uRL" userLabel="Header">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
@@ -22868,6 +22868,7 @@ Z1wAAmdfAAJnZAAAAAAAAAQBAAAAAAAAAHAAAAAAAAAAAAAAAAAAAmdmA
         <image name="png" width="5275" height="2761.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pU2-sF-9e0"/>
+        <segue reference="vZ7-cq-BNJ"/>
+        <segue reference="K2l-iE-XeH"/>
     </inferredMetricsTieBreakers>
 </document>

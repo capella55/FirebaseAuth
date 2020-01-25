@@ -14,7 +14,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
     //MARK: - Outlets
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
+    
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordVerifyTextField: UITextField!
@@ -48,7 +48,6 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
         self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
         self.phoneTextField.delegate = self
-        self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
         self.passwordVerifyTextField.delegate = self
         
@@ -70,7 +69,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
         firstNameTextField.attributedPlaceholder = NSAttributedString(string: "Enter first name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         lastNameTextField.attributedPlaceholder = NSAttributedString(string: "Enter last name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         phoneTextField.attributedPlaceholder = NSAttributedString(string: "Enter phone number", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Enter password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         passwordVerifyTextField.attributedPlaceholder = NSAttributedString(string: "Enter verify password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         
@@ -92,7 +91,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
         firstNameTextField.resignFirstResponder()
         lastNameTextField.resignFirstResponder()
         phoneTextField.resignFirstResponder()
-        emailTextField.resignFirstResponder()
+
         passwordTextField.resignFirstResponder()
         passwordVerifyTextField.resignFirstResponder()
         return
@@ -104,7 +103,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
         firstNameTextField.resignFirstResponder()
         lastNameTextField.resignFirstResponder()
         phoneTextField.resignFirstResponder()
-        emailTextField.resignFirstResponder()
+
         passwordTextField.resignFirstResponder()
         passwordVerifyTextField.resignFirstResponder()
         return true
@@ -144,7 +143,7 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
     //MARK: - Handle SignUp
     func handleRegister() {
         // Checks if text field are used
-        guard let firstName = firstNameTextField.text, let lastName = lastNameTextField.text, let phoneNum = phoneTextField.text, let email = emailTextField.text, let password = passwordTextField.text, let passwordVerified = passwordVerifyTextField.text else {
+        guard let firstName = firstNameTextField.text, let lastName = lastNameTextField.text, let phoneNum = phoneTextField.text, let password = passwordTextField.text, let passwordVerified = passwordVerifyTextField.text else {
             print("Form is not valid")
             return
         }
