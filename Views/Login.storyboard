@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W1k-nE-FXO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W1k-nE-FXO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -24,7 +24,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="HomeController" storyboardName="Main" referencedIdentifier="HomeController" id="OOW-g3-nq4" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn4-Fd-d2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4926" y="1448"/>
+            <point key="canvasLocation" x="-114" y="528"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="ngl-er-osj">
@@ -36,11 +36,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kKo-GV-5jR">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1113"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1005"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-Ob-mXi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1113"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1059"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-G1-ISj">
                                     <rect key="frame" x="0.0" y="60" width="414" height="184"/>
@@ -263,6 +263,7 @@
                         <outlet property="passwordTextField" destination="saC-vw-Wqv" id="2Et-UX-77z"/>
                         <outlet property="passwordToggle" destination="XAM-hV-KUm" id="a0O-6d-b4l"/>
                         <outlet property="transparentView" destination="RVO-4u-LkL" id="gp6-aE-ToM"/>
+                        <segue destination="OOW-g3-nq4" kind="showDetail" identifier="homeSegue" id="XRb-EU-iQ5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrJ-8w-l1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,11 +280,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4FQ-P4-TeQ">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="HLR-ob-lb5">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa8-hC-yKk">
                                     <rect key="frame" x="16" y="164" width="382" height="336"/>
@@ -432,7 +433,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vrh-zz-8Rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1616" y="573"/>
+            <point key="canvasLocation" x="1594" y="17"/>
         </scene>
         <!--Verify Email Controller-->
         <scene sceneID="CID-Fr-RTf">
@@ -444,11 +445,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JgH-RQ-iBB">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="972"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="864"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-Ha-UVb">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="972"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="864"/>
                                 </imageView>
                                 <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-Im-Cgw">
                                     <rect key="frame" x="262" y="50" width="144" height="36"/>
@@ -577,7 +578,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50B-fE-MxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3277" y="1157"/>
+            <point key="canvasLocation" x="3404" y="17"/>
         </scene>
         <!--Change Email Controller-->
         <scene sceneID="c48-zh-uUf">
@@ -715,7 +716,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaS-Zc-wb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4107" y="1448"/>
+            <point key="canvasLocation" x="4275" y="17"/>
         </scene>
         <!--New Email Controller-->
         <scene sceneID="RAI-ls-co1">
@@ -727,11 +728,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rX7-nV-0II">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="vTR-gt-DDd">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtJ-Jw-U87">
                                     <rect key="frame" x="16" y="164" width="382" height="236"/>
@@ -859,7 +860,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjS-Fy-ZJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="725" y="318"/>
+            <point key="canvasLocation" x="738" y="17"/>
         </scene>
         <!--New Password Controller-->
         <scene sceneID="iZ8-LP-ebm">
@@ -871,11 +872,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oys-7m-gUo">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-Q2-sXs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wt9-m5-taN">
                                     <rect key="frame" x="16" y="164" width="382" height="386"/>
@@ -1050,7 +1051,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz0-sm-9A2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2446" y="846"/>
+            <point key="canvasLocation" x="2490" y="17"/>
         </scene>
     </scenes>
     <resources>

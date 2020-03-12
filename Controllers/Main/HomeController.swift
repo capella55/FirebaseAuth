@@ -74,7 +74,6 @@ class HomeController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
     
     

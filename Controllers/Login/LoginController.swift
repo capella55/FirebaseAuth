@@ -40,6 +40,7 @@ class LoginController: UITableViewController, UITextFieldDelegate, GIDSignInUIDe
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
+
         // TableView sets view in place
         self.tableView.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         tableView.contentInsetAdjustmentBehavior = .never
