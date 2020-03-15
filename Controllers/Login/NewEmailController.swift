@@ -98,9 +98,12 @@ class NewEmailController: UITableViewController, UITextFieldDelegate {
     //MARK: - Next Button
     @IBAction func nextButton(_ sender: UIButton) {
         if emailIsValid() == true {
+            
+            //email store to Model
+            
             performSegue(withIdentifier: "newNameSegue", sender: nil)
         } else {
-            let alert = UIAlertController(title: "Invalid Email", message: "Email is not valid.", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Invalid Email", message: "Name is not valid.", preferredStyle: UIAlertController.Style.alert)
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in
                 alert.dismiss(animated: true, completion: nil)

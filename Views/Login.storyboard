@@ -36,11 +36,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kKo-GV-5jR">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="951"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="897"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-Ob-mXi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="951"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="897"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-G1-ISj">
                                     <rect key="frame" x="0.0" y="60" width="414" height="184"/>
@@ -276,7 +276,7 @@
                         <outlet property="passwordToggle" destination="XAM-hV-KUm" id="a0O-6d-b4l"/>
                         <outlet property="transparentView" destination="RVO-4u-LkL" id="gp6-aE-ToM"/>
                         <segue destination="OOW-g3-nq4" kind="showDetail" identifier="homeSegue" id="XRb-EU-iQ5"/>
-                        <segue destination="vQ9-J9-KAG" kind="showDetail" identifier="signUpSegue" id="0d2-nv-GlN"/>
+                        <segue destination="vQ9-J9-KAG" kind="showDetail" identifier="newEmailSegue" id="0d2-nv-GlN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrJ-8w-l1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,6 +369,9 @@
                                             <state key="normal" title="Next">
                                                 <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="nextButton:" destination="uOa-aQ-50E" eventType="touchUpInside" id="b7g-eF-MCQ"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -412,6 +415,9 @@
                                         <constraint firstAttribute="height" constant="100" id="J5W-or-6MR"/>
                                         <constraint firstAttribute="width" constant="70" id="lsz-oF-bLP"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="backButton:" destination="uOa-aQ-50E" eventType="touchUpInside" id="4Qj-FG-kgb"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -441,8 +447,12 @@
                         </sections>
                     </tableView>
                     <connections>
+                        <outlet property="firstNameTextField" destination="dq7-Kj-7n4" id="DT4-LC-8fu"/>
+                        <outlet property="lastNameTextField" destination="UDf-jz-DuK" id="RMD-SJ-K6Q"/>
+                        <outlet property="nextButton" destination="07w-MU-m1f" id="inJ-dO-Bsh"/>
+                        <outlet property="transparentView" destination="Qa8-hC-yKk" id="B4W-ke-MCd"/>
                         <segue destination="vQ9-J9-KAG" kind="showDetail" identifier="newEmailSegue" id="9Py-YU-Unh"/>
-                        <segue destination="JtX-hV-vKs" kind="showDetail" id="Z47-i9-c0y"/>
+                        <segue destination="JtX-hV-vKs" kind="showDetail" identifier="newPasswordSegue" id="Z47-i9-c0y"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vrh-zz-8Rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -463,7 +473,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-Ha-UVb">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="864"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
                                 </imageView>
                                 <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-Im-Cgw">
                                     <rect key="frame" x="262" y="50" width="144" height="36"/>
@@ -588,6 +598,7 @@
                     </tableView>
                     <connections>
                         <segue destination="JtX-hV-vKs" kind="showDetail" identifier="newPasswordSegue" id="zcs-bY-8l9"/>
+                        <segue destination="n4R-av-dlZ" kind="showDetail" identifier="changeEmailSegue" id="ZuV-7Y-tCY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50B-fE-MxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -599,12 +610,12 @@
             <objects>
                 <tableViewController storyboardIdentifier="ChangeEmailController" id="n4R-av-dlZ" customClass="ChangeEmailController" customModule="TheaterX" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" delaysContentTouches="NO" keyboardDismissMode="interactive" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" id="m8B-jd-nqA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EAO-0G-6jt">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="954"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-F5-EXH">
@@ -1062,6 +1073,7 @@
                     </tableView>
                     <connections>
                         <segue destination="uOa-aQ-50E" kind="showDetail" identifier="newUserSegue" id="0V0-t7-a2o"/>
+                        <segue destination="OiF-vl-dle" kind="showDetail" identifier="verifyEmailSegue" id="TuY-rC-K6V"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz0-sm-9A2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1080,7 +1092,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Z47-i9-c0y"/>
-        <segue reference="0d2-nv-GlN"/>
-        <segue reference="tiI-7d-fu1"/>
+        <segue reference="9Py-YU-Unh"/>
+        <segue reference="ftu-wj-bLo"/>
+        <segue reference="0V0-t7-a2o"/>
     </inferredMetricsTieBreakers>
 </document>

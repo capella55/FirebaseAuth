@@ -258,7 +258,7 @@ class LoginController: UITableViewController, UITextFieldDelegate, GIDSignInUIDe
      
      //MARK: - SignUp Button
      @IBAction func signUpButton(_ sender: UIButton) {
-         performSegue(withIdentifier: "signUpSegue", sender: nil)
+         performSegue(withIdentifier: "newEmailSegue", sender: nil)
      }
      
      //MARK: - PasswordView Toggle Button

@@ -27,6 +27,11 @@ class Check: NSObject {
         return emailPred.evaluate(with: emailStr)
     }
     
+//    // Checks if name is valid
+//    func isNameValid(nameStr:String) -> Bool {
+//
+//    }
+
     // Checks if password is valid
     func isPasswordValid(_ password : String) -> Bool{
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z\\d$@$#!%*?&]{6,}")
