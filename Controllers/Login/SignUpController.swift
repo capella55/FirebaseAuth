@@ -125,19 +125,6 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
         
     }
     
-    //MARK: - TODO MOVE TO MODEL
-
-    
-    
-    
-    
-    
-    
-    
-    
-    //MARK: - TODO MOVE TO MODEL
-    
-    
     
     
     //MARK: - Handle SignUp
@@ -162,17 +149,6 @@ class SignUpController: UITableViewController, UITextFieldDelegate {
                 user?.delete(completion: nil)
                 return self.present(alert, animated: true, completion: nil)
                 
-                
-            } else if Check().isValidEmail(emailStr: self.email) == false {
-                
-                //Checks if email is valid if not let user know
-                let alert = UIAlertController(title: "Invalid Email", message: "Email does not exist", preferredStyle: UIAlertController.Style.alert)
-                
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in
-                    alert.dismiss(animated: true, completion: nil)
-                }))
-                user?.delete(completion: nil)
-                return self.present(alert, animated: true, completion: nil)
                 
             } else if Check().isPasswordValid(password) == false{
                 // Checks if password is valid if not let user know

@@ -81,6 +81,15 @@ class HomeController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        if #available(iOS 13.0, *) {
+            let tvc = storyboard?.instantiateViewController(identifier: "HomeController") as! UITableViewController
+            tvc.modalPresentationStyle = .fullScreen
+        } else {
+            print("Not available")
+        }
+        
+        
+        
         tableView.contentInsetAdjustmentBehavior = .never
         
         contactView.layer.cornerRadius = 3

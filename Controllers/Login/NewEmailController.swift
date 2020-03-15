@@ -79,10 +79,12 @@ class NewEmailController: UITableViewController, UITextFieldDelegate {
         
     }
     
-    func emailDone(){
+    func emailIsValid() -> Bool {
         let email = emailTextField.text!
         if Check().isValidEmail(emailStr: email) == false {
-            //alert function from model or alert error from isValidEmail
+            return false
+        } else {
+            return true
         }
         
 
@@ -95,10 +97,16 @@ class NewEmailController: UITableViewController, UITextFieldDelegate {
        
     //MARK: - Next Button
     @IBAction func nextButton(_ sender: UIButton) {
-        
-        //if valid email segue to name
-        //if not present error message
+        if emailIsValid() == true {
+            performSegue(withIdentifier: "newNameSegue", sender: nil)
+        } else {
+            let alert = UIAlertController(title: "Invalid Email", message: "Email is not valid.", preferredStyle: UIAlertController.Style.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in
+                alert.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+    
     }
-    
-    
 }

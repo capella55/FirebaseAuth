@@ -36,11 +36,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kKo-GV-5jR">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1005"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="951"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-Ob-mXi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1059"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="951"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-G1-ISj">
                                     <rect key="frame" x="0.0" y="60" width="414" height="184"/>
@@ -76,6 +76,9 @@
                                             <rect key="frame" x="245" y="0.0" width="68" height="50"/>
                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                             <state key="normal" title="Sign Up"/>
+                                            <connections>
+                                                <action selector="signUpButton:" destination="W1k-nE-FXO" eventType="touchUpInside" id="KrH-pd-gxi"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRf-no-Rfh">
                                             <rect key="frame" x="17" y="0.0" width="213" height="50"/>
@@ -152,6 +155,9 @@
                                             <state key="normal" title="Login">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="loginButton:" destination="W1k-nE-FXO" eventType="touchUpInside" id="TsQ-eJ-JBW"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zus-Dw-Mk4">
                                             <rect key="frame" x="16" y="288" width="350" height="50"/>
@@ -162,6 +168,9 @@
                                             <state key="normal" title="Forgot Password?">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="forgotPasswordButton:" destination="W1k-nE-FXO" eventType="touchUpInside" id="cTf-zo-Zzd"/>
+                                            </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_lock" translatesAutoresizingMaskIntoConstraints="NO" id="1s0-QZ-94c">
                                             <rect key="frame" x="338" y="159" width="28" height="28"/>
@@ -179,6 +188,9 @@
                                             <state key="normal" image="hidew">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="passwordToggle:" destination="W1k-nE-FXO" eventType="touchUpInside" id="wlV-OH-a6c"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -257,13 +269,14 @@
                         </sections>
                     </tableView>
                     <connections>
-                        <outlet property="emailTextField" destination="Z6p-Oh-e0J" id="ZWw-k1-SnE"/>
+                        <outlet property="emailTextField" destination="Z6p-Oh-e0J" id="kPF-9J-hd6"/>
                         <outlet property="googleButton" destination="yUZ-gx-8u4" id="9xz-3F-fDZ"/>
                         <outlet property="loginButton" destination="Jp6-w2-aok" id="jzj-bg-cQm"/>
                         <outlet property="passwordTextField" destination="saC-vw-Wqv" id="2Et-UX-77z"/>
                         <outlet property="passwordToggle" destination="XAM-hV-KUm" id="a0O-6d-b4l"/>
                         <outlet property="transparentView" destination="RVO-4u-LkL" id="gp6-aE-ToM"/>
                         <segue destination="OOW-g3-nq4" kind="showDetail" identifier="homeSegue" id="XRb-EU-iQ5"/>
+                        <segue destination="vQ9-J9-KAG" kind="showDetail" identifier="signUpSegue" id="0d2-nv-GlN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrJ-8w-l1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -280,11 +293,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4FQ-P4-TeQ">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="HLR-ob-lb5">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa8-hC-yKk">
                                     <rect key="frame" x="16" y="164" width="382" height="336"/>
@@ -429,6 +442,7 @@
                     </tableView>
                     <connections>
                         <segue destination="vQ9-J9-KAG" kind="showDetail" identifier="newEmailSegue" id="9Py-YU-Unh"/>
+                        <segue destination="JtX-hV-vKs" kind="showDetail" id="Z47-i9-c0y"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vrh-zz-8Rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -445,7 +459,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JgH-RQ-iBB">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="864"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-Ha-UVb">
@@ -721,18 +735,18 @@
         <!--New Email Controller-->
         <scene sceneID="RAI-ls-co1">
             <objects>
-                <tableViewController storyboardIdentifier="NewEmailController" id="vQ9-J9-KAG" customClass="NewEmailController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewEmailController" id="vQ9-J9-KAG" customClass="NewEmailController" customModule="TheaterX" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" delaysContentTouches="NO" keyboardDismissMode="interactive" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" id="bRF-Hm-MTe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rX7-nV-0II">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="vTR-gt-DDd">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtJ-Jw-U87">
                                     <rect key="frame" x="16" y="164" width="382" height="236"/>
@@ -856,6 +870,7 @@
                         <outlet property="nextButton" destination="CjF-hd-Hh1" id="H1d-kT-ggv"/>
                         <outlet property="transparentView" destination="VtJ-Jw-U87" id="eKE-0c-7vU"/>
                         <segue destination="W1k-nE-FXO" kind="showDetail" identifier=" " id="PMn-CF-UXL"/>
+                        <segue destination="uOa-aQ-50E" kind="showDetail" identifier="newNameSegue" id="tiI-7d-fu1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjS-Fy-ZJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -872,11 +887,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oys-7m-gUo">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-Q2-sXs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wt9-m5-taN">
                                     <rect key="frame" x="16" y="164" width="382" height="386"/>
@@ -1063,4 +1078,9 @@
         <image name="login_background" width="562.5" height="1218"/>
         <image name="png" width="5275" height="2761.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Z47-i9-c0y"/>
+        <segue reference="0d2-nv-GlN"/>
+        <segue reference="tiI-7d-fu1"/>
+    </inferredMetricsTieBreakers>
 </document>
