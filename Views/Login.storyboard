@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W1k-nE-FXO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,11 +35,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kKo-GV-5jR">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="897"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="789"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-Ob-mXi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="897"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="789"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-G1-ISj">
                                     <rect key="frame" x="0.0" y="60" width="414" height="184"/>
@@ -293,11 +292,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4FQ-P4-TeQ">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="HLR-ob-lb5">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa8-hC-yKk">
                                     <rect key="frame" x="16" y="164" width="382" height="336"/>
@@ -469,11 +468,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JgH-RQ-iBB">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="594"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-Ha-UVb">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="594"/>
                                 </imageView>
                                 <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-Im-Cgw">
                                     <rect key="frame" x="262" y="50" width="144" height="36"/>
@@ -481,6 +480,9 @@
                                     <state key="normal" title="Change email">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="changeEmailButton:" destination="OiF-vl-dle" eventType="touchUpInside" id="VZ2-Ng-oAa"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tew-jD-YhU">
                                     <rect key="frame" x="8" y="50" width="74" height="36"/>
@@ -491,6 +493,9 @@
                                     <state key="normal" title="Log out">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="signOutButton:" destination="OiF-vl-dle" eventType="touchUpInside" id="4ED-9m-zgY"/>
+                                    </connections>
                                 </button>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-HP-Myr">
                                     <rect key="frame" x="16" y="160" width="382" height="390"/>
@@ -527,6 +532,9 @@
                                             <state key="normal" title="Re-send verification">
                                                 <color key="titleColor" red="0.30781975389999999" green="0.54323917629999996" blue="0.96867245440000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </state>
+                                            <connections>
+                                                <action selector="resendEmailButton:" destination="OiF-vl-dle" eventType="touchUpInside" id="Kge-DZ-55k"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uT0-cx-gWY">
                                             <rect key="frame" x="16" y="301" width="350" height="64"/>
@@ -538,6 +546,9 @@
                                             <state key="normal" title="Continue">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="continueButton:" destination="OiF-vl-dle" eventType="touchUpInside" id="kvf-aA-Sa9"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emailLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzD-5s-Yhr">
                                             <rect key="frame" x="16" y="148" width="350" height="81"/>
@@ -597,6 +608,8 @@
                         </sections>
                     </tableView>
                     <connections>
+                        <outlet property="emailLabel" destination="dzD-5s-Yhr" id="Xcx-hF-VFg"/>
+                        <outlet property="transparentView" destination="q4d-or-GU0" id="UpS-th-esn"/>
                         <segue destination="JtX-hV-vKs" kind="showDetail" identifier="newPasswordSegue" id="zcs-bY-8l9"/>
                         <segue destination="n4R-av-dlZ" kind="showDetail" identifier="changeEmailSegue" id="ZuV-7Y-tCY"/>
                     </connections>
@@ -615,7 +628,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EAO-0G-6jt">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="630"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-F5-EXH">
@@ -636,6 +649,9 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="70" id="QrP-a8-gWI"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="backButton:" destination="n4R-av-dlZ" eventType="touchUpInside" id="uDX-nG-AFB"/>
+                                    </connections>
                                 </button>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXO-bW-BLn">
                                     <rect key="frame" x="16" y="160" width="382" height="390"/>
@@ -676,6 +692,9 @@
                                             <state key="normal" title="Change">
                                                 <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="changeEmailButton:" destination="n4R-av-dlZ" eventType="touchUpInside" id="FkT-pv-LhN"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMv-yK-nrx">
                                             <rect key="frame" x="16" y="16" width="350" height="50"/>
@@ -736,6 +755,8 @@
                         </sections>
                     </tableView>
                     <connections>
+                        <outlet property="newEmailTextField" destination="Cqk-Ul-thb" id="05K-Yn-FPk"/>
+                        <outlet property="passwordTextField" destination="IhW-4f-SV0" id="9lf-xg-tga"/>
                         <segue destination="OiF-vl-dle" kind="showDetail" identifier="verifyEmailSegue" id="ftu-wj-bLo"/>
                     </connections>
                 </tableViewController>
@@ -753,11 +774,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rX7-nV-0II">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="vTR-gt-DDd">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtJ-Jw-U87">
                                     <rect key="frame" x="16" y="164" width="382" height="236"/>
@@ -898,11 +919,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oys-7m-gUo">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-Q2-sXs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
                                 </imageView>
                                 <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wt9-m5-taN">
                                     <rect key="frame" x="16" y="164" width="382" height="386"/>
@@ -983,6 +1004,9 @@
                                             <state key="normal" title="Next">
                                                 <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="nextButton:" destination="JtX-hV-vKs" eventType="touchUpInside" id="EEc-30-blR"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 characters, 1 capital, and 1 number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-S8-rjh">
                                             <rect key="frame" x="16" y="103" width="350" height="25"/>
@@ -1043,6 +1067,9 @@
                                         <constraint firstAttribute="height" constant="100" id="arI-Mn-A16"/>
                                         <constraint firstAttribute="width" constant="70" id="uWr-JR-r1P"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="backButton:" destination="JtX-hV-vKs" eventType="touchUpInside" id="RhG-bf-TnR"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1072,6 +1099,10 @@
                         </sections>
                     </tableView>
                     <connections>
+                        <outlet property="nextButton" destination="OYH-r9-kfa" id="Nfq-Po-F1H"/>
+                        <outlet property="passwordTextField" destination="V3F-iE-Gcp" id="CVl-Nk-k8t"/>
+                        <outlet property="passwordVerifyTextField" destination="TEZ-d8-Cxn" id="qjv-GC-hgI"/>
+                        <outlet property="transparentView" destination="Wt9-m5-taN" id="JkL-lK-h4H"/>
                         <segue destination="uOa-aQ-50E" kind="showDetail" identifier="newUserSegue" id="0V0-t7-a2o"/>
                         <segue destination="OiF-vl-dle" kind="showDetail" identifier="verifyEmailSegue" id="TuY-rC-K6V"/>
                     </connections>
@@ -1091,9 +1122,9 @@
         <image name="png" width="5275" height="2761.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z47-i9-c0y"/>
+        <segue reference="zcs-bY-8l9"/>
         <segue reference="9Py-YU-Unh"/>
-        <segue reference="ftu-wj-bLo"/>
+        <segue reference="TuY-rC-K6V"/>
         <segue reference="0V0-t7-a2o"/>
     </inferredMetricsTieBreakers>
 </document>

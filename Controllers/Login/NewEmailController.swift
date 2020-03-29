@@ -22,21 +22,20 @@ class NewEmailController: UITableViewController, UITextFieldDelegate {
         
         self.emailTextField.delegate = self
         
+        // Text field hint
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+        
+        
         // TableView sets view in place
         self.tableView.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.keyboardDismissMode = .onDrag
         
         // Start listening for keyboard events
-        NotificationCenter.default.addObserver(self, selector: #selector(SignUpController.keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(SignUpController.keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(SignUpController.keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool){
         super.viewWillAppear(animated)
-        
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         
         transparentView.layer.cornerRadius = 10
         nextButton.layer.cornerRadius = 7
@@ -81,7 +80,7 @@ class NewEmailController: UITableViewController, UITextFieldDelegate {
     
     func emailIsValid() -> Bool {
         let email = emailTextField.text!
-        if Check().isValidEmail(emailStr: email) == false {
+        if Check().ifEmailIsValid(emailStr: email) == false {
             return false
         } else {
             return true

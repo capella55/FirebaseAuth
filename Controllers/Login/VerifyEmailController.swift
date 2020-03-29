@@ -12,8 +12,8 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class VerifyEmailController: UITableViewController {
-
-    //MARK: - Outlets
+    
+    @IBOutlet weak var transparentView: UIView!
     @IBOutlet weak var emailLabel: UILabel!
     
     //MARK: - Variables
@@ -27,15 +27,14 @@ class VerifyEmailController: UITableViewController {
     //MARK: - ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // TableView sets view in place
-        self.tableView.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
-        tableView.contentInsetAdjustmentBehavior = .never
-        tableView.keyboardDismissMode = .onDrag
         
-        //MARK: TODO: MOVE TO viewWillAppear
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("I'm here")
+        print(Auth.auth().currentUser?.email as Any)
         emailLabel.text = (Auth.auth().currentUser?.email)! + "."
-        
     }
     
     //MARK: - Prepare for Segue
@@ -53,29 +52,7 @@ class VerifyEmailController: UITableViewController {
         }
     }
     
-    //MARK: - Resend Email
-    func resendEmail() {
-        // Make sure currentUser gets the information of the actual current user
-        let currentUser = Auth.auth().currentUser;
-        
-        if ((currentUser) != nil) {
-            // User is signed in.
-            Auth.auth().currentUser?.sendEmailVerification(completion: nil)
-            print("Email was sent")
-            
-            let alert = UIAlertController(title: "Email has been sent", message: "Please login to your email and verify your account.", preferredStyle: UIAlertController.Style.alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in
-                alert.dismiss(animated: true, completion: nil)
-            }));
-            return self.present(alert, animated: true, completion: nil)
-            
-        } else {
-            // No user is signed in.
-            print("User is not signed in")
-        }
-        
-    }
+    
     
     //MARK: - Handle Sign Out
     func handleSignOut() {
@@ -101,7 +78,21 @@ class VerifyEmailController: UITableViewController {
     
     //MARK: - Resend Email Button
     @IBAction func resendEmailButton(_ sender: UIButton) {
-        resendEmail()
+        
+        //MARK: - Resend Email
+        if TheaterXDB().resendEmail(currentUser: (Auth.auth().currentUser?.email)!) == true {
+            let alert = UIAlertController(title: "Email has been sent", message: "Please login to your email and verify your account.", preferredStyle: UIAlertController.Style.alert)
+                
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in
+                alert.dismiss(animated: true, completion: nil)
+            }));
+            return self.present(alert, animated: true, completion: nil)
+                
+        } else {
+                
+                
+        }
+           
         
     }
     
@@ -120,5 +111,10 @@ class VerifyEmailController: UITableViewController {
         }
     }
     
-    
+
+        
 }
+    
+    
+    
+

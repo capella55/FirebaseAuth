@@ -8,6 +8,9 @@
 //MARK: - Imports
 import Foundation
 import UIKit
+import Firebase
+import FirebaseAuth
+import GoogleSignIn
 
 //MARK: - Class Login
 class Login: NSObject {
@@ -19,10 +22,38 @@ class Login: NSObject {
 
 //MARK: - Class Check
 class Check: NSObject {
-    // Checks if email is valid
-    func isValidEmail(emailStr:String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    var userEmail:String = ""
+    var userPassword:String = ""
+    var errorDescription:String = ""
+    
+    func ifAccountWasCreated() -> Bool {
+        Auth.auth().createUser(withEmail: userEmail, password: userPassword, completion: {(user , error) in
+            let user = Auth.auth().currentUser
+            print(error!.localizedDescription)
+            if error != nil {
+            // If there is something wrong give user error
+                self.errorDescription = error!.localizedDescription
+                
+
+                user?.delete(completion: nil)
+            
+                            
+            }
         
+        
+        })
+        if (Auth.auth().currentUser != nil) {
+            return true
+        } else {
+            return false
+        }
+        
+    }
+    
+    // Checks if email is valid
+    func ifEmailIsValid(emailStr:String) -> Bool {
+        self.userEmail = emailStr
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: emailStr)
     }
@@ -33,15 +64,16 @@ class Check: NSObject {
 //    }
 
     // Checks if password is valid
-    func isPasswordValid(_ password : String) -> Bool{
+    func ifPasswordIsValid(passwordStr : String) -> Bool{
+        self.userPassword = passwordStr
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z\\d$@$#!%*?&]{6,}")
-        return passwordTest.evaluate(with: password)
+        return passwordTest.evaluate(with: passwordStr)
     }
     
     // Checks if password is valid
-    func isPasswordVerifyValid(_ password : String,_ passwordVerified : String) -> Bool{
+    func ifPasswordVerifyIsValid(passwordStr : String,passwordVerifiedStr : String) -> Bool{
         var isValid = Bool()
-        if password != passwordVerified {
+        if passwordStr == passwordVerifiedStr {
             isValid = true
         } else {
             isValid = false
@@ -50,13 +82,25 @@ class Check: NSObject {
     }
     
     // Checks if phone number is valid
-    func isPhoneValid(phoneStr: String) -> Bool {
+    func ifPhoneIsValid(phoneStr: String) -> Bool {
         let PHONE_REGEX = "^\\d{10}$"
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
         let result = phoneTest.evaluate(with: phoneStr)
         return result
     }
     
+}
+
+class TheaterXDB: NSObject {
+    
+    // Resends email
+    func resendEmail(currentUser : String) -> Bool {
+        // Make sure currentUser gets the information of the actual current user
+        Auth.auth().currentUser?.sendEmailVerification(completion: nil)
+        print("Email was sent")
+        return true
+        
+    }
 }
 
 
