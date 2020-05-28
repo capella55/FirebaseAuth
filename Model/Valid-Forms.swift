@@ -22,9 +22,9 @@ class Login: NSObject {
 
 //MARK: - Class Check
 class Check: NSObject {
-    var userEmail:String = ""
-    var userPassword:String = ""
-    var errorDescription:String = ""
+    var userEmail: String = ""
+    var userPassword: String = ""
+    var errorDescription: String = ""
     
     func ifAccountWasCreated() -> Bool {
         Auth.auth().createUser(withEmail: userEmail, password: userPassword, completion: {(user , error) in

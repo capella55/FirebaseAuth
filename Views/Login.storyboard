@@ -468,11 +468,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JgH-RQ-iBB">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="594"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="486"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-Ha-UVb">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="594"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
                                 </imageView>
                                 <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-Im-Cgw">
                                     <rect key="frame" x="262" y="50" width="144" height="36"/>
@@ -628,7 +628,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.31965033009999999" blue="0.19907704470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EAO-0G-6jt">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="630"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-F5-EXH">
@@ -1123,7 +1123,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zcs-bY-8l9"/>
-        <segue reference="9Py-YU-Unh"/>
+        <segue reference="0d2-nv-GlN"/>
         <segue reference="TuY-rC-K6V"/>
         <segue reference="0V0-t7-a2o"/>
     </inferredMetricsTieBreakers>

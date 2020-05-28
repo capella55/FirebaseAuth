@@ -93,6 +93,8 @@ class LoginController: UITableViewController, UITextFieldDelegate, GIDSignInUIDe
         }
     }
 
+    
+    
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         dismissKeyboards()
         return
